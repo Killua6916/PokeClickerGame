@@ -4,3 +4,15 @@
 </header>
 <body>
   <h1> Welcome to my website </h1>
+<span id="counter">0</span>
+<pre id="my-pre">test</pre>
+
+<script>
+    var counter = 0,
+        counterSpan = document.getElementById('counter');
+
+    //add the click listener using addEventListener, this is preferred over inline handlers
+    document.getElementById('my-pre').addEventListener('click', function () {
+        counterSpan.innerHTML = ++counter;
+    });
+</script>
