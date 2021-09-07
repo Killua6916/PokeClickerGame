@@ -2,7 +2,7 @@ let pokeballs
 // if the key value pair exists, we set pokeballs equal to the stored value
 // else, set pokeballs to 0
 if (localStorage.getItem("count")){
-    x = parseInt(localStorage.getItem("count"))
+    pokeballs = parseInt(localStorage.getItem("count"))
 } else{
     pokeballs = 0
 }
