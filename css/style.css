@@ -2,10 +2,16 @@ body {
     font-family: Arial;
     background-color: #77bfe2;
     width: 500px;
-    min-height: 750px;
+    min-height: 550px;
     margin: auto;
     text-align: center;
+    display: block;
+    padding-top: 80px;
 }                                           
+
+input#btn.pokeball {
+ margin-bottom: 20px;   
+}
 
 span#counter {
  background-color: #fff;
