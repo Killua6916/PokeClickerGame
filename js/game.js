@@ -1,5 +1,4 @@
 var pokeballs = 0;
-var quantity = 0;
 
 function findPokeballs() {
   pokeballs = pokeballs + 1;
