@@ -6,12 +6,12 @@ if (localStorage.getItem("count")){
 } else{
     pokeballs = 0
 }
-document.getElementById('pokeballs').addEventListener("click", iterate)
+document.getElementById('btn').addEventListener("click", iterate)
 document.getElementById("counter").innerHTML = pokeballs
 function findPokeballs(){
-    x += 1
-    localStorage.setItem("pokeballs", x)
-    console.log(x)
-    document.getElementById("counter").innerHTML = x
+    pokeballs += 1
+    localStorage.setItem("count", pokeballs)
+    console.log(pokeballs)
+    document.getElementById("counter").innerHTML = pokeballs
 }
 
