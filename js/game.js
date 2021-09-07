@@ -2,23 +2,20 @@ var pokeballs = 0;
 
 function findPokeballs() {
   pokeballs = pokeballs + 1;
-   quantity.innerHTML = pokeballs;
+  document.getElementById("pokeballs").innerHTML = pokeballs;
 }
 
 /* Save Game */
 var save = {
- pokeballs: pokeballs,
- quantity: quantity
+ pokeballs: pokeballs
 }
 
 function save() {
   localStorage.setItem('pokeballs', JSON.stringify(pokeballs));
-  localStorage.setItem('quantity', JSON.stringify(quantity));
 }
 
 /* Load Game */
 function loadGame() {
   pokeballs = JSON.parse(localStorage.getItem('pokeballs'));
-  quantity = JSON.parse(localStorage.getItem('quantity'));
 }
 
