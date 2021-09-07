@@ -7,17 +7,17 @@ body {
     text-align: center;
 }                                           
 
-#btn {
+.pokeball {
   display: block;  
   transition: ease-in-out 0.2s;
 }
 
-#btn:hover {
+.pokeball:hover {
     display: block;
     width: 110%;
 }
 
-span.counter {
+span#counter {
  background-color: #fff;
  width: 30px;
  padding: 20px;
