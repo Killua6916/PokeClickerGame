@@ -7,4 +7,18 @@ body {
     text-align: center;
 }                                           
 
+input#btn {
+  display: block;  
+  transition: ease-in-out 0.2s;
+}
 
+input#btn:hover {
+    display: block;
+    width: 110%;
+}
+
+p.user-pokeballs {
+ background-color: #fff;
+ width: 30px;
+ padding: 20px;
+}
