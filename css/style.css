@@ -30,11 +30,12 @@ span#counter {
     position: fixed;
     top:0;
     left:0;
+    width: 100%;
+    min-width: 1024px;
 }
 
 .sticky-header h1 {
  font-size: 24px;   
- padding: 10px;
  color: #fff;
  font-weight: bolder;
 }
