@@ -1,16 +1,10 @@
 body {
-    padding-top: 30px;
     font-family: Arial;
     background-color: #77bfe2;
     width: 500px;
+    min-height: 750px;
     margin: auto;
     text-align: center;
 }                                           
 
-p {
-    font-size: 20px;
-    color: white;
-    display: block;
-    margin: 5px;
-}
 
