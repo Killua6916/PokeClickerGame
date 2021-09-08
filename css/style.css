@@ -23,19 +23,19 @@ span#counter {
 
 .left-column {
  display: inline-block;
- width: 49%;
+ width: 50%;
  float: left;
  border-right: 2px solid #000; 
- height: 81%;
+ height: 80.5%;
  min-height: 453px;
  padding-top: 120px;
 }
 
 .right-column {
- width: 50%;
+ width: 49%;
  display: inline-block;
  float: left;
- height: 81%;
+ height: 80.5%;
  min-height: 453px;
  padding-top: 20px;
 }
