@@ -40,6 +40,9 @@ span#counter {
 	height: 100%;
 	width: 18%;
 	overflow: auto;
+	position: fixed;
+	left: 0;
+	top:0;
 }
 
 #content {
