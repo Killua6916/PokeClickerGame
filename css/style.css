@@ -43,6 +43,7 @@ span#counter {
 	position: fixed;
 	left: 0;
 	top:0;
+	border: 1px solid #000;
 }
 
 #content {
