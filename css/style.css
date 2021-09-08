@@ -30,27 +30,4 @@ span#counter {
  margin: 10px;
 }
 
-#container {
-	height: 100%;
-}
-
-#sidebar {
-	display: inline-block;
-	vertical-align: top;
-	height: 100%;
-	width: 18%;
-	overflow: auto;
-	position: fixed;
-	left: 0;
-	top:0;
-	border: 1px solid #000;
-}
-
-#content {
-	display: inline-block;
-	vertical-align: top;
-	height: 100%;
-	width: 82%;
-	overflow: auto;
-}
 
