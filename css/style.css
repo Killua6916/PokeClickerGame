@@ -25,3 +25,8 @@ span#counter {
  margin: 10px;
 }
 
+.left-column {
+ display: inline-block;
+ width: 50%;
+  
+}
