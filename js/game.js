@@ -27,6 +27,7 @@ function findPokeballs(amountOfPokeballs) {
   count = count + value + amountOfPokeballs;
   document.getElementById("count").innerHTML = count;
   document.getElementById("value").innerHTML = value;
+  document.getElementById("ammountOfPokeballs").innerHTML = amountOfPokeballs;
 }
 
 // Buy Greatballs
@@ -187,6 +188,7 @@ function saveGame() {
   var gameSave = {
     count: count,
     value: value,
+    amountOfPokeballs: amountOfPokeballs,
     greatballs: greatballs,
     greatballCost: greatballCost,
     ultraballs: ultraballs,
@@ -218,6 +220,7 @@ function loadGame() {
   var savedGame = JSON.parse(localStorage.getItem("gameSave"));
   if (typeof savedGame.count !== "undefined") count = savedGame.count;
   if (typeof savedGame.value !== "undefined") value = savedGame.value;
+  if (typeof savedGame.amountOfPokeballs !== "undefined") amountOfPokeballs = savedGame.amountOfPokeballs;
   if (typeof savedGame.greatballs !== "undefined") greatballs = savedGame.greatballs;
   if (typeof savedGame.greatballCost !== "undefined") greatballCost = savedGame.greatballCost;
   if (typeof savedGame.ultraballs !== "undefined") ultraballs = savedGame.ultraballs;
@@ -240,9 +243,10 @@ function loadGame() {
 
 //Load Save Game
 window.onload = function() {
-document.getElementById("greatballCost").innerHTML = greatballCost;
 document.getElementById("count").innerHTML = count;
 document.getElementById("value").innerHTML = value;
+document.getElememtById("amountOfPokeballs").innerHTML = amountOfPokeballs;
+document.getElementById("greatballCost").innerHTML = greatballCost;
 document.getElementById("greatballs").innerHTML = greatballs;
 document.getElementById("greatballCost").innerHTML = greatballCost;
 document.getElementById("ultraballCost").innerHTML = ultraballCost;
