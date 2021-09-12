@@ -125,7 +125,6 @@ span#count {
 }
 
 .top-header {
- position: fixed;
  top:0;
  font-size: 16px;
  padding: 0;
