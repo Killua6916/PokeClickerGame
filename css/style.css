@@ -99,13 +99,15 @@ span a {
 }
 
 span#count {
- background-color: #242526;
+ background-color: #273029;
  padding: 10px 20px;
- color: #000;
+ color: #ffde00;
+ -webkit-text-stroke: 3px #3B4CCA;
  border-radius: 4px;
  border: 2px solid #3B4CCA; 
  font-size: 20px;
  font-weight: 600;
+ margin: auto;
 }
 
 .left-column {
