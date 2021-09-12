@@ -27,7 +27,6 @@ function findPokeballs() {
   count = count + value;
   document.getElementById("count").innerHTML = count;
   document.getElementById("value").innerHTML = value;
-  document.getElementById("ammountOfPokeballs").innerHTML = amountOfPokeballs;
 }
 
 // Buy Greatballs
@@ -188,7 +187,6 @@ function saveGame() {
   var gameSave = {
     count: count,
     value: value,
-    amountOfPokeballs: amountOfPokeballs,
     greatballs: greatballs,
     greatballCost: greatballCost,
     ultraballs: ultraballs,
@@ -220,7 +218,6 @@ function loadGame() {
   var savedGame = JSON.parse(localStorage.getItem("gameSave"));
   if (typeof savedGame.count !== "undefined") count = savedGame.count;
   if (typeof savedGame.value !== "undefined") value = savedGame.value;
-  if (typeof savedGame.amountOfPokeballs !== "undefined") amountOfPokeballs = savedGame.amountOfPokeballs;
   if (typeof savedGame.greatballs !== "undefined") greatballs = savedGame.greatballs;
   if (typeof savedGame.greatballCost !== "undefined") greatballCost = savedGame.greatballCost;
   if (typeof savedGame.ultraballs !== "undefined") ultraballs = savedGame.ultraballs;
@@ -243,6 +240,7 @@ function loadGame() {
 
 //Load Save Game
 window.onload = function() {
+loadGame();
 findPokeballs();
 document.getElementById("count").innerHTML = count;
 document.getElementById("value").innerHTML = value;
@@ -266,7 +264,6 @@ document.getElementById("beastballCost").innerHTML = beastballCost;
 document.getElementById("beastballs").innerHTML = beastballs;
 document.getElementById("masterballCost").innerHTML = masterballCost;
 document.getElementById("masterballs").innerHTML = masterballs;
-loadGame(); 
 };
 
 //Reset Game 
