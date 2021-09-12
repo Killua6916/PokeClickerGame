@@ -101,7 +101,7 @@ span a {
 }
 
 span#count {
- padding: 10px 0;
+ padding: 20px 20px;
  color: #ffde00;
  -webkit-text-stroke: 1px #3B4CCA;
  font-size: 32px;
@@ -113,7 +113,7 @@ span#count {
 .left-column {
  display: block;
  width: 100%;
- padding-top: 60px;
+ padding-top: 20px;
 }
 
 .right-column {
@@ -121,7 +121,7 @@ span#count {
  padding:0;
  text-align: center;
  min-width: 100%;
- padding-top: 40px;
+ padding-top: 0;
 }
 
 .top-header {
