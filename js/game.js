@@ -23,8 +23,8 @@ var masterballs = 0;
 // -----------------------------------------------------------------------------------//
 
 /* User clicks the Pokeball */
-function findPokeballs(amountOfPokeballs) {
-  count = count + value + amountOfPokeballs;
+function findPokeballs() {
+  count = count + value;
   document.getElementById("count").innerHTML = count;
   document.getElementById("value").innerHTML = value;
 }
