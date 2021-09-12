@@ -1,14 +1,35 @@
+// Game Variables
 var count = 0;
 var value = 1;
-
- function findPokeballs() {
-  count = count + value;
-  document.getElementById("count").innerHTML = count;
-  document.getElementById("value").innerHTML = value;
-} 
-
 var greatballCost = 100;
 var greatballs = 0;
+var ultraballCost = 500;
+var ultraballs = 0;
+var premierballCost = 1000;
+var premierballs = 0;
+var fastballCost = 2500;
+var fastballs = 0;
+var dreamballCost = 7500;
+var dreamballs = 0;
+var heavyballCost = 15000;
+var heavyballs = 0;
+var timerballCost = 25000;
+var timerballs = 0;
+var beastballCost = 75000;
+var beastballs = 0;
+var masterballCost = 100000;
+var masterballs = 0;
+
+// -----------------------------------------------------------------------------------//
+
+/* User clicks the Pokeball */
+function findPokeballs(amountOfPokeballs) {
+  count = count + value + amountOfPokeballs;
+  document.getElementById("count").innerHTML = count;
+  document.getElementById("value").innerHTML = value;
+}
+
+// Buy Greatballs
 function buyGreatballs() {
 if(count >= greatballCost && greatballs == 0) {
  value = 2;
@@ -25,8 +46,7 @@ if(count >= greatballCost && greatballs == 0) {
   }
  }
 
-var ultraballCost = 500;
-var ultraballs = 0;
+// Buy Ultraballs
 function buyUltraballs() {
 if(count >= ultraballCost && ultraballs == 0) {
  value = 4;
@@ -43,8 +63,7 @@ if(count >= ultraballCost && ultraballs == 0) {
   }
  }
 
-var premierballCost = 1000;
-var premierballs = 0;
+// Buy Premierballs
 function buyPremierballs() {
 if(count >= premierballCost && premierballs == 0) {
  value = 6;
@@ -61,9 +80,7 @@ if(count >= premierballCost && premierballs == 0) {
   }
  }
 
-
-var fastballCost = 2500;
-var fastballs = 0;
+// Buy Fastballs
 function buyFastballs() {
 if(count >= fastballCost && fastballs == 0) {
  value = 8;
@@ -80,8 +97,7 @@ if(count >= fastballCost && fastballs == 0) {
   }
  }
 
-var dreamballCost = 7500;
-var dreamballs = 0;
+// Buy Dreamballs
 function buyDreamballs() {
 if(count >= dreamballCost && dreamballs == 0) {
  value = 10;
@@ -98,8 +114,7 @@ if(count >= dreamballCost && dreamballs == 0) {
   }
  }
 
-var heavyballCost = 15000;
-var heavyballs = 0;
+// Buy Heavyballs
 function buyHeavyballs() {
 if(count >= heavyballCost && heavyballs == 0) {
  value = 12;
@@ -116,8 +131,7 @@ if(count >= heavyballCost && heavyballs == 0) {
   }
  }
 
-var timerballCost = 25000;
-var timerballs = 0;
+// Buy Timerballs
 function buyTimerballs() {
 if(count >= timerballCost && timerballs == 0) {
  value = 14;
@@ -134,8 +148,7 @@ if(count >= timerballCost && timerballs == 0) {
   }
  }
 
-var beastballCost = 75000;
-var beastballs = 0;
+// Buy Beastballs
 function buyBeastballs() {
 if(count >= beastballCost && beastballs == 0) {
  value = 16;
@@ -152,8 +165,7 @@ if(count >= beastballCost && beastballs == 0) {
   }
  }
 
-var masterballCost = 100000;
-var masterballs = 0;
+// Buy Masterballs
 function buyMasterballs() {
 if(count >= masterballCost && masterballs == 0) {
  value = 16;
@@ -170,26 +182,7 @@ if(count >= masterballCost && masterballs == 0) {
   }
  }
 
-/* Pokemon Upgrades
-var starterCost = 250;
-var starter = 0;
-var autoclick = 0;
-function buyStarter() {
- if(count >= starterCost && starter == 0) {
- autoclick = 1;
- starter = 1;
- count = count - starterCost;
- document.getElementById("starterCost").innerHTML = starterCost;
- document.getElementById("starter").innerHTML = starter;
- document.getElementById("autoclick").innerHTML = autoclick;
-} else if (starter == 1) {
-  alert("you have already purchased a starter pokemon");
-} else {
-  alert("You cannot purchase a starter pokemon"); 
-   }
- }  */
-
-// Save Game
+// ----------------------------------- Save Game/Load Game/Reset Game --------------------------------//
 function saveGame() {
   var gameSave = {
     count: count,
