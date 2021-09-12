@@ -1,0 +1,125 @@
+<html>
+	<head>
+		<title>Pokeball Mania | Pokemon Idle RPG | Free to play</title>
+		   <meta charset="UTF-8">
+                    <meta name="description" content="Free to play - Pokemon Idle RPG | Pokeball Mania is a free to play pokemon based idle rpg | Upgrade your pokeballs, purchase new pokemon and special items">
+                     <meta name="keywords" content="Pokemon, RPG, Free, Game, Idle, Pokeball">
+                         <meta meta name="viewport" content="width=device-width, user-scalable=no" />
+		     <link rel="icon" type="image/png" href="/images/pokeball.png">
+		    <link rel="stylesheet" type="text/css" href="css/style.css" />
+      <script data-ad-client="ca-pub-4297915828806419" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4297915828806419"
+     crossorigin="anonymous"></script>
+	</head>
+	    <body>	
+		  <div class="left-column unselectable"> 
+            <div class="top-header">
+              <img src="/images/poke-ball.png" style="width:14px;"> <span>Pokeball Mania - Free to play Idle RPG</span>
+             <!-- <span class="info"><a href="#"> How to play </a> <a href="#"> Legal Information </a> <a href="#"> FAQ's </a> -->
+            </div>
+              <div class="ball" onClick="findPokeballs()">
+                 <div class="button"></div>
+              </div>
+             <br />
+			 <p class="user-pokeballs"><span id="count">0</span></p>
+		    </div>
+		    
+		    <div class="right-column">
+              <h2>Shop Pokeballs</h2>
+              <p class="shop-minitext">
+              Purchasing higher level pokeballs, increases your pokeballs per click.
+               <br />
+              (Click on the pokeball to buy)
+              </p>
+              <br />
+                <ul class="buy-items">
+                 <li>
+                   <div class="tooltip">
+                     <input type="image" onClick="buyGreatballs()" src="images/items/great-ball.png">
+                     <span class="tooltiptext"><img src="images/items/great-ball.png"><br />Cost: 100 <br /> Click Value: x2</span>
+                       </div>
+                    <div class="tooltip">
+                   <input type="image"  onClick="buyUltraballs()" src="images/items/ultra-ball.png">
+                        <span class="tooltiptext"><img src="images/items/ultra-ball.png"><br />Cost: 500 <br /> Click Value: x4</span>
+                   </div>
+                   <div class="tooltip">
+                   <input type="image"  onClick="buyPremierballs()" src="images/items/premier-ball.png">
+                     <span class="tooltiptext"><img src="images/items/premier-ball.png"> <br />Cost: 1,000 <br /> Click Value: x6</span>
+                   </div>
+                   <div class="tooltip">
+                   <input type="image" onClick="buyFastballs()" src="images/items/fast-ball.png">
+                     <span class="tooltiptext"><img src="images/items/fast-ball.png"><br />Cost: 2,500 <br /> Click Value: x8</span>
+                   </div>
+                   <div class="tooltip">
+                   <input type="image"  onClick="buyDreamballs()" src="images/items/dream-ball.png" style="padding: 10px;">
+                     <span class="tooltiptext"><img src="images/items/dream-ball.png"><br />Cost: 7,500 <br /> Click Value: x10</span>
+                   </div>
+                   <br />
+                   <div class="tooltip">
+                   <input type="image"  onClick="buyHeavyballs()" src="images/items/heavy-ball.png">
+                     <span class="tooltiptext"><img src="images/items/heavy-ball.png"><br />Cost: 15,000 <br /> Click Value: x12</span>
+                   </div>
+                   <div class="tooltip">
+                   <input type="image"  onClick="buyTimerballs()" src="images/items/timer-ball.png" style="padding: 10px;">
+                     <span class="tooltiptext"><img src="images/items/timer-ball.png"><br />Cost: 25,000 <br /> Click Value: x14</span>
+                   </div>
+                    <div class="tooltip">
+                   <input type="image"  onClick="buyBeastballs()" src="images/items/beast-ball.png" style="padding: 10px;">
+                     <span class="tooltiptext"><img src="images/items/beast-ball.png"><br />Cost: 75,000 <br /> Click Value: x16</span>
+                   </div>
+                   <div class="tooltip">
+                   <input type="image" onClick="buyMasterballs()" src="images/items/master-ball.png">
+                     <span class="tooltiptext"><img src="images/items/master-ball.png"><br />Cost: 100,000 <br /> Click Value: x18</span>
+                   </div>
+                  
+                  </li>
+              </ul>
+              <!--
+                  <h2 class="shop-pokemon">Shop Pokemon</h2>
+                  <p class="shop-minitext"> 
+                  Purchasing Pokemon increases your autoclicks. 
+                  <br />
+                  (Click on the Pokemon to purchase)
+                   
+                      <ul class="buy-items" id="pokemon">
+                     <li>
+                       <div class="tooltip">
+                   <input type="image" id="" src="images/pokemon/black-white/1.png" onClick="">
+                         <span class="tooltiptext"><img src="images/pokemon/icons/1.png"><br />Coming Soon...</span>
+                       </div>
+                       <div class="tooltip">
+                   <input type="image" id="" src="images/pokemon/black-white/271.png">
+                         <span class="tooltiptext"><img src="images/pokemon/icons/271.png"><br />Coming Soon...</span>
+                       </div>
+                       <div class="tooltip">
+                   <input type="image" id="" src="images/pokemon/black-white/208.png">
+                         <span class="tooltiptext"><img src="images/pokemon/icons/208.png"><br />Coming Soon...</span>
+                       </div>
+                       <div class="tooltip">
+                   <input type="image" id="" src="images/pokemon/black-white/243.png">
+                         <span class="tooltiptext"><img src="images/pokemon/icons/243.png"><br />Coming Soon...</span>
+                       </div>
+                  </li>
+                                    
+                  <h3 class="shiny-pokemon">Shiny Pokemon</h3>
+                                      <div class="tooltip">
+                   <input type="image" id="" src="images/pokemon/black-white/shiny/4.png">
+                                        <span class="tooltiptext"><img src="images/pokemon/icons/4.png"><br />Coming Soon...</span>
+                                      </div>
+                                      <div class="tooltip">
+                   <input type="image" id="" src="images/pokemon/black-white/shiny/126.png">
+                                        <span class="tooltiptext"><img src="images/pokemon/icons/126.png"><br />Coming Soon...</span>
+                                      </div>
+                                      <div class="tooltip">
+                   <input type="image" id="" src="images/pokemon/black-white/shiny/78.png">
+                                        <span class="tooltiptext"><img src="images/pokemon/icons/78.png"><br />Coming Soon...</span>
+                                      </div>
+                                      <div class="tooltip">
+                   <input type="image" id="" src="images/pokemon/black-white/shiny/483.png">
+                                        <span class="tooltiptext"><img src="images/pokemon/icons/483.png"><br />Coming Soon...</span>
+                                      </div>
+              </ul> -->
+		    </div>
+		<script type="text/javascript" src="js/game.js"></script>
+	</body>
+</html>
