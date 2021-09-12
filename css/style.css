@@ -113,13 +113,11 @@ span#count {
 .left-column {
  display: block;
  width: 100%;
- min-height: 235px;
  padding-top: 60px;
 }
 
 .right-column {
  display: block;
- min-height: 235px;
  padding:0;
  text-align: center;
  min-width: 100%;
