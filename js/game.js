@@ -243,6 +243,7 @@ function loadGame() {
 
 //Load Save Game
 window.onload = function() {
+findPokeballs();
 document.getElementById("count").innerHTML = count;
 document.getElementById("value").innerHTML = value;
 document.getElememtById("amountOfPokeballs").innerHTML = amountOfPokeballs;
@@ -266,7 +267,6 @@ document.getElementById("beastballs").innerHTML = beastballs;
 document.getElementById("masterballCost").innerHTML = masterballCost;
 document.getElementById("masterballs").innerHTML = masterballs;
 loadGame(); 
-findPokeballs();
 };
 
 //Reset Game 
