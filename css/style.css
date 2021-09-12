@@ -108,6 +108,7 @@ span#count {
  font-size: 26px;
  font-weight: bolder;
  margin: auto;
+  text-align: center;
 }
 
 .left-column {
@@ -134,7 +135,7 @@ span#count {
  padding: 10px;
  color: #fff;
  width: 100%;
- text-align: left;
+ text-align: center;
  z-index: 999;
 }
 
