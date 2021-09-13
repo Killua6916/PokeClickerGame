@@ -250,7 +250,7 @@ document.addEventListener("keydown", function(event) {
 window.onload = function() {
 loadGame();
 document.getElementById("count").innerHTML = count;
-document.getElememtById("value").innerHTML = value;
+document.getElementById("value").innerHTML = value;
 document.getElementById("greatballCost").innerHTML = greatballCost;
 document.getElementById("greatballs").innerHTML = greatballs;
 document.getElementById("ultraballCost").innerHTML = ultraballCost;
