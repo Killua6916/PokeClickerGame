@@ -250,7 +250,6 @@ document.addEventListener("keydown", function(event) {
 window.onload = function() {
 loadGame();
 document.getElementById("count").innerHTML = count;
-document.getElementById("value").innerHTML = value;
 document.getElementById("greatballCost").innerHTML = greatballCost;
 document.getElementById("greatballs").innerHTML = greatballs;
 document.getElementById("greatballCost").innerHTML = greatballCost;
@@ -270,6 +269,7 @@ document.getElementById("beastballCost").innerHTML = beastballCost;
 document.getElementById("beastballs").innerHTML = beastballs;
 document.getElementById("masterballCost").innerHTML = masterballCost;
 document.getElementById("masterballs").innerHTML = masterballs;
+document.getElementById("value").innerHTML = value;
 };
 
 //Reset Game 
