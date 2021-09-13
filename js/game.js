@@ -240,7 +240,6 @@ function loadGame() {
 //Load Save Game
 window.onload = function() {
 loadGame();
-document.getElementById("value").innerHTML = value;
 document.getElementById("count").innerHTML = count;
 document.getElememtById("amountOfPokeballs").innerHTML = amountOfPokeballs;
 document.getElementById("greatballCost").innerHTML = greatballCost;
