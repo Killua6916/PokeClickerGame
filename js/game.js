@@ -241,7 +241,6 @@ function loadGame() {
 window.onload = function() {
 loadGame();
 document.getElementById("count").innerHTML = count;
-document.getElememtById("amountOfPokeballs").innerHTML = amountOfPokeballs;
 document.getElementById("greatballCost").innerHTML = greatballCost;
 document.getElementById("greatballs").innerHTML = greatballs;
 document.getElementById("greatballCost").innerHTML = greatballCost;
