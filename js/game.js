@@ -26,7 +26,6 @@ var masterballs = 0;
 function findPokeballs() {
   count = count + value;
   document.getElementById("count").innerHTML = count;
-  document.getElementById("value").innerHTML = value;
 }
 
 // Buy Greatballs
