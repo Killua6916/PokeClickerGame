@@ -241,7 +241,6 @@ function loadGame() {
 //Load Save Game
 window.onload = function() {
 loadGame();
-findPokeballs();
 document.getElementById("count").innerHTML = count;
 document.getElementById("value").innerHTML = value;
 document.getElememtById("amountOfPokeballs").innerHTML = amountOfPokeballs;
