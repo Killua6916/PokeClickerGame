@@ -182,6 +182,32 @@ if(count >= masterballCost && masterballs == 0) {
  }
 
 // ----------------------------------- Save Game/Load Game/Reset Game --------------------------------//
+// Load Game
+function loadGame() {
+  var savedGame = JSON.parse(localStorage.getItem("gameSave"));
+  if (typeof savedGame.count !== "undefined") count = savedGame.count;
+  if (typeof savedGame.value !== "undefined") value = savedGame.value;
+  if (typeof savedGame.greatballs !== "undefined") greatballs = savedGame.greatballs;
+  if (typeof savedGame.greatballCost !== "undefined") greatballCost = savedGame.greatballCost;
+  if (typeof savedGame.ultraballs !== "undefined") ultraballs = savedGame.ultraballs;
+  if (typeof savedGame.ultraballCost !== "undefined") ultraballCost = savedGame.ultraballCost;
+  if (typeof savedGame.premierballs !== "undefined") premierballs = savedGame.premierballs;
+  if (typeof savedGame.premierballCost !== "undefined") premierballCost = savedGame.premierballCost;
+  if (typeof savedGame.fastballs !== "undefined") fastballs = savedGame.fastballs;
+  if (typeof savedGame.fastballCost !== "undefined") fastballCost = savedGame.fastballCost;
+  if (typeof savedGame.dreamballs !== "undefined") dreamballs = savedGame.dreamballs;
+  if (typeof savedGame.dreamballCost !== "undefined") dreamballCost = savedGame.dreamballCost;
+  if (typeof savedGame.heavyballs !== "undefined") heavyballs = savedGame.heavyballs;
+  if (typeof savedGame.heavyballCost !== "undefined") heavyballCost = savedGame.heavyballCost;
+  if (typeof savedGame.timerballs !== "undefined") timerballs = savedGame.timerballs;
+  if (typeof savedGame.timerballCost !== "undefined") timerballCost = savedGame.timerballCost;
+  if (typeof savedGame.beastballs !== "undefined") beastballs = savedGame.beastballs;
+  if (typeof savedGame.beastballCost !== "undefined") beastballCost = savedGame.beastballCost;
+  if (typeof savedGame.masterballs !== "undefined") masterballs = savedGame.masterballs;
+  if (typeof savedGame.masterballCost !== "undefined") masterballCost = savedGame.masterballCost;
+}
+
+
 function saveGame() {
   var gameSave = {
     count: count,
@@ -212,35 +238,12 @@ setInterval(function() {
   saveGame();
 }, 1000); //saves every 1 seconds
 
-// Load Game
-function loadGame() {
-  var savedGame = JSON.parse(localStorage.getItem("gameSave"));
-  if (typeof savedGame.count !== "undefined") count = savedGame.count;
-  if (typeof savedGame.value !== "undefined") value = savedGame.value;
-  if (typeof savedGame.greatballs !== "undefined") greatballs = savedGame.greatballs;
-  if (typeof savedGame.greatballCost !== "undefined") greatballCost = savedGame.greatballCost;
-  if (typeof savedGame.ultraballs !== "undefined") ultraballs = savedGame.ultraballs;
-  if (typeof savedGame.ultraballCost !== "undefined") ultraballCost = savedGame.ultraballCost;
-  if (typeof savedGame.premierballs !== "undefined") premierballs = savedGame.premierballs;
-  if (typeof savedGame.premierballCost !== "undefined") premierballCost = savedGame.premierballCost;
-  if (typeof savedGame.fastballs !== "undefined") fastballs = savedGame.fastballs;
-  if (typeof savedGame.fastballCost !== "undefined") fastballCost = savedGame.fastballCost;
-  if (typeof savedGame.dreamballs !== "undefined") dreamballs = savedGame.dreamballs;
-  if (typeof savedGame.dreamballCost !== "undefined") dreamballCost = savedGame.dreamballCost;
-  if (typeof savedGame.heavyballs !== "undefined") heavyballs = savedGame.heavyballs;
-  if (typeof savedGame.heavyballCost !== "undefined") heavyballCost = savedGame.heavyballCost;
-  if (typeof savedGame.timerballs !== "undefined") timerballs = savedGame.timerballs;
-  if (typeof savedGame.timerballCost !== "undefined") timerballCost = savedGame.timerballCost;
-  if (typeof savedGame.beastballs !== "undefined") beastballs = savedGame.beastballs;
-  if (typeof savedGame.beastballCost !== "undefined") beastballCost = savedGame.beastballCost;
-  if (typeof savedGame.masterballs !== "undefined") masterballs = savedGame.masterballs;
-  if (typeof savedGame.masterballCost !== "undefined") masterballCost = savedGame.masterballCost;
-}
 
 //Load Save Game
 window.onload = function() {
 loadGame();
 document.getElementById("count").innerHTML = count;
+document.getElementById("value").innerHTML = value;
 document.getElementById("greatballCost").innerHTML = greatballCost;
 document.getElementById("greatballs").innerHTML = greatballs;
 document.getElementById("greatballCost").innerHTML = greatballCost;
