@@ -207,7 +207,6 @@ function loadGame() {
   if (typeof savedGame.masterballCost !== "undefined") masterballCost = savedGame.masterballCost;
 }
 
-
 function saveGame() {
   var gameSave = {
     count: count,
@@ -237,6 +236,14 @@ function saveGame() {
 setInterval(function() {
   saveGame();
 }, 1000); //saves every 1 seconds
+
+// Create an Event Listener
+document.addEventListener("keydown", function(event) {
+  if(event.ctrlKey && event.which == 83) {
+    event.preventDefault();
+    saveGame();
+  }
+}, false);
 
 
 //Load Save Game
