@@ -23,8 +23,8 @@ var masterballs = 0;
 // -----------------------------------------------------------------------------------//
 
 /* User clicks the Pokeball */
-function findPokeballs(findYourPokeballs) {
-  count = count + value + findYourPokeballs;
+function findPokeballs() {
+  count = count + value;
   document.getElementById("count").innerHTML = count;
   document.getElementById("value").innerHTML = value;
 }
@@ -42,7 +42,7 @@ if(count >= greatballCost && greatballs == 0) {
   } else if (greatballs == 1) {
    alert("You have already purchased a greatball");
   } else {
-  alert("You cannot puchase a greatball");
+  alert("You cannot afford to purchase a greatball");
   }
  }
 
@@ -59,7 +59,7 @@ if(count >= ultraballCost && ultraballs == 0) {
   } else if (ultraballs == 1) {
    alert("You have already purchased a Ultraball");
   } else {
-  alert("You cannot puchase a Ultraball");
+  alert("You cannot afford to purchase a Ultraball");
   }
  }
 
@@ -76,7 +76,7 @@ if(count >= premierballCost && premierballs == 0) {
   } else if (premierballs == 1) {
    alert("You have already purchased a Premierball");
   } else {
-  alert("You cannot puchase a Premierball");
+  alert("You cannot afford to purchase a Premierball");
   }
  }
 
@@ -93,7 +93,7 @@ if(count >= fastballCost && fastballs == 0) {
   } else if (fastballs == 1) {
    alert("You have already purchased a Fastball");
   } else {
-  alert("You cannot puchase a Fastball");
+  alert("You cannot afford to purchase a Fastball");
   }
  }
 
@@ -110,7 +110,7 @@ if(count >= dreamballCost && dreamballs == 0) {
   } else if (fastballs == 1) {
    alert("You have already purchased a Dreamball");
   } else {
-  alert("You cannot puchase a Dreamball");
+  alert("You cannot afford to purchase a Dreamball");
   }
  }
 
@@ -127,7 +127,7 @@ if(count >= heavyballCost && heavyballs == 0) {
   } else if (heavyballs == 1) {
    alert("You have already purchased a Heavyball");
   } else {
-  alert("You cannot puchase a Heavyball");
+  alert("You cannot afford to purchase a Heavyball");
   }
  }
 
@@ -144,7 +144,7 @@ if(count >= timerballCost && timerballs == 0) {
   } else if (timerballs == 1) {
    alert("You have already purchased a Timerball");
   } else {
-  alert("You cannot puchase a Timerball");
+  alert("You cannot afford to purchase a Timerball");
   }
  }
 
@@ -161,7 +161,7 @@ if(count >= beastballCost && beastballs == 0) {
   } else if (beastballs == 1) {
    alert("You have already purchased a Beastball");
   } else {
-  alert("You cannot puchase a Beastball");
+  alert("You cannot afford to purchase a Beastball");
   }
  }
 
@@ -178,7 +178,7 @@ if(count >= masterballCost && masterballs == 0) {
   } else if (masterballs == 1) {
    alert("You have already purchased a Masterball");
   } else {
-  alert("You cannot puchase a Masterball");
+  alert("You cannot afford to purchase a Masterball");
   }
  }
 
