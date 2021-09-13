@@ -1,6 +1,6 @@
 // Game Variables
-var count = 0;
-var value = 1;
+var count = 0; //Ammount of Pokeballs
+var value = 1; //Pokeballs Per Click
 var greatballCost = 100;
 var greatballs = 0;
 var ultraballCost = 500;
@@ -23,8 +23,8 @@ var masterballs = 0;
 // -----------------------------------------------------------------------------------//
 
 /* User clicks the Pokeball */
-function findPokeballs() {
-  count = count + value;
+function findPokeballs(findYourPokeballs) {
+  count = count + value + findYourPokeballs;
   document.getElementById("count").innerHTML = count;
   document.getElementById("value").innerHTML = value;
 }
