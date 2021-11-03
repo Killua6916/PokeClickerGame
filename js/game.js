@@ -182,20 +182,7 @@ if(count >= masterballCost && masterballs == 0) {
  }
 
 // ----------------------------------- AutoClicker ----------------------------------- //
-function buyPokemon(){
-    var pokeCost = Math.floor(10 * Math.pow(1.1,cursors));     //works out the cost of this cursor
-    if(count >= pokeCost){                             value      //checks that the player can afford the cursor
-        count = value + 1;                                   //increases number of cursors
-    	count = count - pokeCost;                          //removes the cookies spent
-        document.getElementById('count').innerHTML = count;  //updates the number of cursors for the user
-        document.getElementById('value').innerHTML = value;  //updates the number of cookies for the user
-    };
-    var nextCost = Math.floor(10 * Math.pow(1.1,cursors));       //works out the cost of the next cursor
-    document.getElementById('pokeCost').innerHTML = nextCost;  //updates the cursor cost for the user
-};
-window.setInterval(function(){
-pokeClick(value);
-}, 1000);
+
 
 // ----------------------------------- Save Game/Load Game/Reset Game --------------------------------//
 // Load Game
