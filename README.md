@@ -1,6 +1,6 @@
 # Welcome to The Pokemon Idle Game!
 
-The point of this game is to find as many pokeballs
-as possible. In doing so will give you the ability
-to purchase new pokemon, legendarys and more.
+The point of this game is to click the pokeball.
 
+You can purchase Pokeball upgrades by purchasing 
+higher tier pokeballs such as Great Balls, Masterballs.
