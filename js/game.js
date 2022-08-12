@@ -34,7 +34,6 @@ if(count >= greatballCost && greatballs == 0) {
  value = 2;
   greatballs = 1;
   count = count - greatballCost;
-  document.getElementById("greatballCost").innerHTML = greatballCost;
   document.getElementById("greatballs").innerHTML = greatballs;
   document.getElementById("count").innerHTML = count;
   document.getElememtById("value").innerHTML = value;
@@ -51,7 +50,6 @@ if(count >= ultraballCost && ultraballs == 0) {
  value = 4;
   ultraballs = 1;
   count = count - ultraballCost;
-  document.getElementById("ultraballCost").innerHTML = ultraballCost;
   document.getElementById("ultraballs").innerHTML = ultraballs;
   document.getElementById("count").innerHTML = count;
   document.getElememtById("value").innerHTML = value;
@@ -69,7 +67,6 @@ if(count >= premierballCost && premierballs == 0) {
  value = 6;
   premierballs = 1;
   count = count - premierballCost;
-  document.getElementById("premierballCost").innerHTML = premierballCost;
   document.getElementById("premierballs").innerHTML = premierballs;
   document.getElementById("count").innerHTML = count;
   document.getElememtById("value").innerHTML = value;
@@ -87,7 +84,6 @@ if(count >= fastballCost && fastballs == 0) {
  value = 8;
   fastballs = 1;
   count = count - fastballCost;
-  document.getElementById("fastballCost").innerHTML = fastballCost;
   document.getElementById("fastballs").innerHTML = fastballs;
   document.getElementById("count").innerHTML = count;
   document.getElememtById("value").innerHTML = value;
@@ -105,7 +101,6 @@ if(count >= dreamballCost && dreamballs == 0) {
  value = 10;
   dreamballs = 1;
   count = count - dreamballCost;
-  document.getElementById("dreamballCost").innerHTML = dreamballCost;
   document.getElementById("dreamballs").innerHTML = dreamballs;
   document.getElementById("count").innerHTML = count;
   document.getElememtById("value").innerHTML = value;
@@ -122,7 +117,6 @@ if(count >= heavyballCost && heavyballs == 0) {
  value = 12;
   heavyballs = 1;
   count = count - heavyballCost;
-  document.getElementById("heavyballCost").innerHTML = heavyballCost;
   document.getElementById("heavyballs").innerHTML = heavyballs;
   document.getElementById("count").innerHTML = count;
   document.getElememtById("value").innerHTML = value;
@@ -139,7 +133,6 @@ if(count >= timerballCost && timerballs == 0) {
  value = 14;
   timerballs = 1;
   count = count - timerballCost;
-  document.getElementById("timerballCost").innerHTML = timerballCost;
   document.getElementById("timerballs").innerHTML = timerballs;
   document.getElementById("count").innerHTML = count;
   document.getElememtById("value").innerHTML = value;
@@ -156,7 +149,6 @@ if(count >= beastballCost && beastballs == 0) {
  value = 16;
   timerballs = 1;
   count = count - beastballCost;
-  document.getElementById("beastballCost").innerHTML = beastballCost;
   document.getElementById("beastballs").innerHTML = beastballs;
   document.getElementById("count").innerHTML = count;
   document.getElememtById("value").innerHTML = value;
@@ -173,7 +165,6 @@ if(count >= masterballCost && masterballs == 0) {
  value = 16;
   masterballs = 1;
   count = count - masterballCost;
-  document.getElementById("masterballCost").innerHTML = masterballCost;
   document.getElementById("masterballs").innerHTML = masterballs;
   document.getElementById("count").innerHTML = count;
   document.getElememtById("value").innerHTML = value;
