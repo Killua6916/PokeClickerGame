@@ -55,6 +55,7 @@ if(count >= ultraballCost && ultraballs == 0) {
   document.getElementById("ultraballs").innerHTML = ultraballs;
   document.getElementById("count").innerHTML = count;
   document.getElememtById("value").innerHTML = value;
+  alert("You have purchased a Ultraball");
   } else if (ultraballs == 1) {
    alert("You have already purchased a Ultraball");
   } else {
@@ -72,6 +73,7 @@ if(count >= premierballCost && premierballs == 0) {
   document.getElementById("premierballs").innerHTML = premierballs;
   document.getElementById("count").innerHTML = count;
   document.getElememtById("value").innerHTML = value;
+   alert("You have purchased a Premierball");
   } else if (premierballs == 1) {
    alert("You have already purchased a Premierball");
   } else {
@@ -89,6 +91,7 @@ if(count >= fastballCost && fastballs == 0) {
   document.getElementById("fastballs").innerHTML = fastballs;
   document.getElementById("count").innerHTML = count;
   document.getElememtById("value").innerHTML = value;
+  alert("You have purchased a Fastball");
   } else if (fastballs == 1) {
    alert("You have already purchased a Fastball");
   } else {
