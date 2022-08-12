@@ -235,15 +235,15 @@ document.addEventListener("keydown", function(event) {
 window.onload = function() {
 loadGame();
 document.getElementById("count").innerHTML = count;
-document.getElementById("greatballs").innerHTML = greatballs;
-document.getElementById("ultraballs").innerHTML = ultraballs;
-document.getElementById("premierballs").innerHTML = premierballs;
-document.getElementById("fastballs").innerHTML = fastballs;
-document.getElementById("dreamballs").innerHTML = dreamballs;
-document.getElementById("heavyballs").innerHTML = heavyballs;
-document.getElementById("timerballs").innerHTML = timerballs;
-document.getElementById("beastballs").innerHTML = beastballs;
-document.getElementById("masterballs").innerHTML = masterballs;
+document.getElementById("greatballs").html() = greatballs;
+document.getElementById("ultraballs").html() = ultraballs;
+document.getElementById("premierballs").html() = premierballs;
+document.getElementById("fastballs").html() = fastballs;
+document.getElementById("dreamballs").html() = dreamballs;
+document.getElementById("heavyballs").html() = heavyballs;
+document.getElementById("timerballs").html() = timerballs;
+document.getElementById("beastballs").html() = beastballs;
+document.getElementById("masterballs").html() = masterballs;
 document.getElementById("value").innerHTML = value;
 };
 
