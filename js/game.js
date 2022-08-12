@@ -244,6 +244,6 @@ document.getElementById("value").innerHTML = value;
 //Reset Game 
 function resetGame() {
  if(confirm("Are you sure you want to reset your game?")) {
- localStorage.clear();
+window.localStorage.clear();
    }
 }
