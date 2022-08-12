@@ -132,6 +132,13 @@ ul.buy-items#pokemon input[type="image"] {
  width: 80px; 
 }
 
+.reset-game {
+ position: fixed;
+ bottom:0;
+ left: auto;
+ right: auto;
+}
+
 @media only screen and (max-width: 1024px) {
    body {
     width: 100%;
