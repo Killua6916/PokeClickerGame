@@ -39,8 +39,7 @@ if(count >= greatballCost && greatballs == 0) {
   document.getElementById("count").innerHTML = count;
   document.getElememtById("value").innerHTML = value;
   } else if (greatballs == 1) {
-   jQuery(ul input).addClass("purchased");
-   alert("You have already purchased a greatball");
+  alert("You have already purchased a greatball");
   } else {
   alert("You cannot afford to purchase a greatball");
   }
