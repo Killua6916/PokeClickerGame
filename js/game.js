@@ -240,10 +240,3 @@ document.getElementById("beastballs").html() = beastballs;
 document.getElementById("masterballs").html() = masterballs;
 document.getElementById("value").innerHTML = value;
 };
-
-//Reset Game 
-function resetGame() {
- if(confirm("Are you sure you want to reset your game?")) {
-window.localStorage.clear();
-   }
-}
